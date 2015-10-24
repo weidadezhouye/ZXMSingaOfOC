@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZXHomeViewController.h
 //  ZXMSinga
 //
 //  Created by  周学明 on 15/10/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZXHomeViewController : UITableViewController
 
 @end
-

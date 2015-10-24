@@ -8,24 +8,61 @@
 
 /* Begin PBXBuildFile section */
 		CB13B1BF1BD34B7900A6816D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1BE1BD34B7900A6816D /* main.m */; };
-		CB13B1C21BD34B7900A6816D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1C11BD34B7900A6816D /* AppDelegate.m */; };
-		CB13B1C51BD34B7900A6816D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1C41BD34B7900A6816D /* ViewController.m */; };
-		CB13B1C81BD34B7900A6816D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB13B1C61BD34B7900A6816D /* Main.storyboard */; };
 		CB13B1CA1BD34B7900A6816D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB13B1C91BD34B7900A6816D /* Assets.xcassets */; };
 		CB13B1CD1BD34B7900A6816D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB13B1CB1BD34B7900A6816D /* LaunchScreen.storyboard */; };
+		CB13B1EC1BD37A1400A6816D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1EB1BD37A1400A6816D /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		CB13B1EF1BD37A6900A6816D /* ZXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1EE1BD37A6900A6816D /* ZXTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		CB13B1F21BD37BE800A6816D /* ZXDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1F11BD37BE800A6816D /* ZXDiscoverViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CB13B1F51BD37BFA00A6816D /* ZXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1F41BD37BFA00A6816D /* ZXHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CB13B1F81BD37C1C00A6816D /* ZXMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1F71BD37C1C00A6816D /* ZXMeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CB13B1FB1BD37C2D00A6816D /* ZXMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1FA1BD37C2D00A6816D /* ZXMessageViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CB13B2001BD3951200A6816D /* UIBarButtonItem+Expention.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1FF1BD3951200A6816D /* UIBarButtonItem+Expention.m */; settings = {ASSET_TAGS = (); }; };
+		CB582B901BD51A46009B6F5B /* ZXOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB582B8F1BD51A46009B6F5B /* ZXOneViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CB582B931BD51A50009B6F5B /* ZXTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB582B921BD51A50009B6F5B /* ZXTwoViewController.m */; settings = {ASSET_TAGS = (); }; };
+		CB582B9B1BD521DD009B6F5B /* ZXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB582B9A1BD521DD009B6F5B /* ZXNavigationController.m */; settings = {ASSET_TAGS = (); }; };
+		CB6C50261BD78B1000C43E32 /* ZXSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C50251BD78B1000C43E32 /* ZXSearchView.m */; settings = {ASSET_TAGS = (); }; };
+		CB6C50281BD78B3200C43E32 /* ZXSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB6C50271BD78B3200C43E32 /* ZXSearchView.xib */; settings = {ASSET_TAGS = (); }; };
+		CB6C502B1BD78DB800C43E32 /* NSBundle+Expention.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C502A1BD78DB800C43E32 /* NSBundle+Expention.m */; settings = {ASSET_TAGS = (); }; };
+		CB6C502E1BD7CDF000C43E32 /* ZXTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C502D1BD7CDF000C43E32 /* ZXTitleBtn.m */; settings = {ASSET_TAGS = (); }; };
+		CB6C50311BD7D45B00C43E32 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C50301BD7D45B00C43E32 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB13B1BA1BD34B7900A6816D /* ZXMSinga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXMSinga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB13B1BE1BD34B7900A6816D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CB13B1C01BD34B7900A6816D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CB13B1C11BD34B7900A6816D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CB13B1C31BD34B7900A6816D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CB13B1C41BD34B7900A6816D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CB13B1C71BD34B7900A6816D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB13B1C91BD34B7900A6816D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB13B1CC1BD34B7900A6816D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB13B1CE1BD34B7900A6816D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB13B1EA1BD37A1400A6816D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../Message(消息)/AppDelegate.h"; sourceTree = "<group>"; };
+		CB13B1EB1BD37A1400A6816D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../Message(消息)/AppDelegate.m"; sourceTree = "<group>"; };
+		CB13B1ED1BD37A6900A6816D /* ZXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTabBarController.h; sourceTree = "<group>"; };
+		CB13B1EE1BD37A6900A6816D /* ZXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTabBarController.m; sourceTree = "<group>"; };
+		CB13B1F01BD37BE800A6816D /* ZXDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXDiscoverViewController.h; sourceTree = "<group>"; };
+		CB13B1F11BD37BE800A6816D /* ZXDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXDiscoverViewController.m; sourceTree = "<group>"; };
+		CB13B1F31BD37BFA00A6816D /* ZXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXHomeViewController.h; sourceTree = "<group>"; };
+		CB13B1F41BD37BFA00A6816D /* ZXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXHomeViewController.m; sourceTree = "<group>"; };
+		CB13B1F61BD37C1C00A6816D /* ZXMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMeViewController.h; sourceTree = "<group>"; };
+		CB13B1F71BD37C1C00A6816D /* ZXMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMeViewController.m; sourceTree = "<group>"; };
+		CB13B1F91BD37C2D00A6816D /* ZXMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMessageViewController.h; sourceTree = "<group>"; };
+		CB13B1FA1BD37C2D00A6816D /* ZXMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMessageViewController.m; sourceTree = "<group>"; };
+		CB13B1FE1BD3951200A6816D /* UIBarButtonItem+Expention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Expention.h"; sourceTree = "<group>"; };
+		CB13B1FF1BD3951200A6816D /* UIBarButtonItem+Expention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Expention.m"; sourceTree = "<group>"; };
+		CB582B8E1BD51A46009B6F5B /* ZXOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXOneViewController.h; sourceTree = "<group>"; };
+		CB582B8F1BD51A46009B6F5B /* ZXOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXOneViewController.m; sourceTree = "<group>"; };
+		CB582B911BD51A50009B6F5B /* ZXTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTwoViewController.h; sourceTree = "<group>"; };
+		CB582B921BD51A50009B6F5B /* ZXTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTwoViewController.m; sourceTree = "<group>"; };
+		CB582B981BD5214F009B6F5B /* ZXSinga.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSinga.pch; sourceTree = "<group>"; };
+		CB582B991BD521DD009B6F5B /* ZXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNavigationController.h; sourceTree = "<group>"; };
+		CB582B9A1BD521DD009B6F5B /* ZXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNavigationController.m; sourceTree = "<group>"; };
+		CB6C50241BD78B1000C43E32 /* ZXSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSearchView.h; sourceTree = "<group>"; };
+		CB6C50251BD78B1000C43E32 /* ZXSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXSearchView.m; sourceTree = "<group>"; };
+		CB6C50271BD78B3200C43E32 /* ZXSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXSearchView.xib; sourceTree = "<group>"; };
+		CB6C50291BD78DB800C43E32 /* NSBundle+Expention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Expention.h"; sourceTree = "<group>"; };
+		CB6C502A1BD78DB800C43E32 /* NSBundle+Expention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Expention.m"; sourceTree = "<group>"; };
+		CB6C502C1BD7CDF000C43E32 /* ZXTitleBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTitleBtn.h; sourceTree = "<group>"; };
+		CB6C502D1BD7CDF000C43E32 /* ZXTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTitleBtn.m; sourceTree = "<group>"; };
+		CB6C502F1BD7D45B00C43E32 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		CB6C50301BD7D45B00C43E32 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +95,9 @@
 		CB13B1BC1BD34B7900A6816D /* ZXMSinga */ = {
 			isa = PBXGroup;
 			children = (
-				CB13B1C01BD34B7900A6816D /* AppDelegate.h */,
-				CB13B1C11BD34B7900A6816D /* AppDelegate.m */,
-				CB13B1C31BD34B7900A6816D /* ViewController.h */,
-				CB13B1C41BD34B7900A6816D /* ViewController.m */,
-				CB13B1C61BD34B7900A6816D /* Main.storyboard */,
+				CB13B1D41BD3794300A6816D /* Classes */,
 				CB13B1C91BD34B7900A6816D /* Assets.xcassets */,
 				CB13B1CB1BD34B7900A6816D /* LaunchScreen.storyboard */,
-				CB13B1CE1BD34B7900A6816D /* Info.plist */,
 				CB13B1BD1BD34B7900A6816D /* Supporting Files */,
 			);
 			path = ZXMSinga;
@@ -74,9 +106,239 @@
 		CB13B1BD1BD34B7900A6816D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB13B1CE1BD34B7900A6816D /* Info.plist */,
 				CB13B1BE1BD34B7900A6816D /* main.m */,
+				CB582B981BD5214F009B6F5B /* ZXSinga.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB13B1D41BD3794300A6816D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB582B8D1BD51A29009B6F5B /* Tmb */,
+				CB13B1FC1BD3918600A6816D /* Lib */,
+				CB13B1DD1BD3794300A6816D /* Main(主要) */,
+				CB13B1D51BD3794300A6816D /* Discover(发现) */,
+				CB13B1D91BD3794300A6816D /* Home(主页) */,
+				CB13B1E11BD3794300A6816D /* me(我) */,
+				CB13B1E51BD3794300A6816D /* Message(消息) */,
+				CB13B1E91BD3794300A6816D /* Other(其他) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CB13B1D51BD3794300A6816D /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1D61BD3794300A6816D /* Controller */,
+				CB13B1D71BD3794300A6816D /* Model */,
+				CB13B1D81BD3794300A6816D /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		CB13B1D61BD3794300A6816D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1F01BD37BE800A6816D /* ZXDiscoverViewController.h */,
+				CB13B1F11BD37BE800A6816D /* ZXDiscoverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB13B1D71BD3794300A6816D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB13B1D81BD3794300A6816D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C50241BD78B1000C43E32 /* ZXSearchView.h */,
+				CB6C50251BD78B1000C43E32 /* ZXSearchView.m */,
+				CB6C50271BD78B3200C43E32 /* ZXSearchView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB13B1D91BD3794300A6816D /* Home(主页) */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1DA1BD3794300A6816D /* Controller */,
+				CB13B1DB1BD3794300A6816D /* Model */,
+				CB13B1DC1BD3794300A6816D /* View */,
+			);
+			path = "Home(主页)";
+			sourceTree = "<group>";
+		};
+		CB13B1DA1BD3794300A6816D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1F31BD37BFA00A6816D /* ZXHomeViewController.h */,
+				CB13B1F41BD37BFA00A6816D /* ZXHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB13B1DB1BD3794300A6816D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB13B1DC1BD3794300A6816D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C502C1BD7CDF000C43E32 /* ZXTitleBtn.h */,
+				CB6C502D1BD7CDF000C43E32 /* ZXTitleBtn.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB13B1DD1BD3794300A6816D /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1DE1BD3794300A6816D /* Controller */,
+				CB13B1DF1BD3794300A6816D /* Model */,
+				CB13B1E01BD3794300A6816D /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		CB13B1DE1BD3794300A6816D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1ED1BD37A6900A6816D /* ZXTabBarController.h */,
+				CB13B1EE1BD37A6900A6816D /* ZXTabBarController.m */,
+				CB582B991BD521DD009B6F5B /* ZXNavigationController.h */,
+				CB582B9A1BD521DD009B6F5B /* ZXNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB13B1DF1BD3794300A6816D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB13B1E01BD3794300A6816D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB13B1E11BD3794300A6816D /* me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1E21BD3794300A6816D /* Controller */,
+				CB13B1E31BD3794300A6816D /* Model */,
+				CB13B1E41BD3794300A6816D /* View */,
+			);
+			path = "me(我)";
+			sourceTree = "<group>";
+		};
+		CB13B1E21BD3794300A6816D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1F61BD37C1C00A6816D /* ZXMeViewController.h */,
+				CB13B1F71BD37C1C00A6816D /* ZXMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB13B1E31BD3794300A6816D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB13B1E41BD3794300A6816D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB13B1E51BD3794300A6816D /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1E61BD3794300A6816D /* Controller */,
+				CB13B1E71BD3794300A6816D /* Model */,
+				CB13B1E81BD3794300A6816D /* View */,
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		CB13B1E61BD3794300A6816D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1F91BD37C2D00A6816D /* ZXMessageViewController.h */,
+				CB13B1FA1BD37C2D00A6816D /* ZXMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB13B1E71BD3794300A6816D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB13B1E81BD3794300A6816D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB13B1E91BD3794300A6816D /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1EA1BD37A1400A6816D /* AppDelegate.h */,
+				CB13B1EB1BD37A1400A6816D /* AppDelegate.m */,
+			);
+			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		CB13B1FC1BD3918600A6816D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CB13B1FD1BD3918600A6816D /* cartegry */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		CB13B1FD1BD3918600A6816D /* cartegry */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C502F1BD7D45B00C43E32 /* UIView+Extension.h */,
+				CB6C50301BD7D45B00C43E32 /* UIView+Extension.m */,
+				CB13B1FE1BD3951200A6816D /* UIBarButtonItem+Expention.h */,
+				CB13B1FF1BD3951200A6816D /* UIBarButtonItem+Expention.m */,
+				CB6C50291BD78DB800C43E32 /* NSBundle+Expention.h */,
+				CB6C502A1BD78DB800C43E32 /* NSBundle+Expention.m */,
+			);
+			path = cartegry;
+			sourceTree = "<group>";
+		};
+		CB582B8D1BD51A29009B6F5B /* Tmb */ = {
+			isa = PBXGroup;
+			children = (
+				CB582B8E1BD51A46009B6F5B /* ZXOneViewController.h */,
+				CB582B8F1BD51A46009B6F5B /* ZXOneViewController.m */,
+				CB582B911BD51A50009B6F5B /* ZXTwoViewController.h */,
+				CB582B921BD51A50009B6F5B /* ZXTwoViewController.m */,
+			);
+			path = Tmb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +367,7 @@
 		CB13B1B21BD34B7900A6816D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZX;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = " 周学明";
 				TargetAttributes = {
@@ -139,7 +402,7 @@
 			files = (
 				CB13B1CD1BD34B7900A6816D /* LaunchScreen.storyboard in Resources */,
 				CB13B1CA1BD34B7900A6816D /* Assets.xcassets in Resources */,
-				CB13B1C81BD34B7900A6816D /* Main.storyboard in Resources */,
+				CB6C50281BD78B3200C43E32 /* ZXSearchView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,23 +413,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB13B1C51BD34B7900A6816D /* ViewController.m in Sources */,
-				CB13B1C21BD34B7900A6816D /* AppDelegate.m in Sources */,
+				CB6C50311BD7D45B00C43E32 /* UIView+Extension.m in Sources */,
+				CB13B1F81BD37C1C00A6816D /* ZXMeViewController.m in Sources */,
+				CB582B9B1BD521DD009B6F5B /* ZXNavigationController.m in Sources */,
+				CB13B2001BD3951200A6816D /* UIBarButtonItem+Expention.m in Sources */,
+				CB13B1FB1BD37C2D00A6816D /* ZXMessageViewController.m in Sources */,
+				CB6C50261BD78B1000C43E32 /* ZXSearchView.m in Sources */,
+				CB6C502E1BD7CDF000C43E32 /* ZXTitleBtn.m in Sources */,
+				CB582B931BD51A50009B6F5B /* ZXTwoViewController.m in Sources */,
+				CB13B1EF1BD37A6900A6816D /* ZXTabBarController.m in Sources */,
+				CB13B1F21BD37BE800A6816D /* ZXDiscoverViewController.m in Sources */,
+				CB13B1F51BD37BFA00A6816D /* ZXHomeViewController.m in Sources */,
+				CB13B1EC1BD37A1400A6816D /* AppDelegate.m in Sources */,
 				CB13B1BF1BD34B7900A6816D /* main.m in Sources */,
+				CB582B901BD51A46009B6F5B /* ZXOneViewController.m in Sources */,
+				CB6C502B1BD78DB800C43E32 /* NSBundle+Expention.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB13B1C61BD34B7900A6816D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB13B1C71BD34B7900A6816D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB13B1CB1BD34B7900A6816D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -262,6 +529,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ZXMSinga/ZXSinga.pch";
 				INFOPLIST_FILE = ZXMSinga/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zxm.com.ZXMSinga;
@@ -273,6 +543,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ZXMSinga/ZXSinga.pch";
 				INFOPLIST_FILE = ZXMSinga/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zxm.com.ZXMSinga;
@@ -299,6 +572,7 @@
 				CB13B1D31BD34B7900A6816D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
