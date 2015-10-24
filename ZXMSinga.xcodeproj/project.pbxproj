@@ -17,6 +17,7 @@
 		CB13B1F81BD37C1C00A6816D /* ZXMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1F71BD37C1C00A6816D /* ZXMeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		CB13B1FB1BD37C2D00A6816D /* ZXMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1FA1BD37C2D00A6816D /* ZXMessageViewController.m */; settings = {ASSET_TAGS = (); }; };
 		CB13B2001BD3951200A6816D /* UIBarButtonItem+Expention.m in Sources */ = {isa = PBXBuildFile; fileRef = CB13B1FF1BD3951200A6816D /* UIBarButtonItem+Expention.m */; settings = {ASSET_TAGS = (); }; };
+		CB224A951BDB206C008CA13B /* ZXPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB224A941BDB206C008CA13B /* ZXPopController.m */; settings = {ASSET_TAGS = (); }; };
 		CB582B901BD51A46009B6F5B /* ZXOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB582B8F1BD51A46009B6F5B /* ZXOneViewController.m */; settings = {ASSET_TAGS = (); }; };
 		CB582B931BD51A50009B6F5B /* ZXTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB582B921BD51A50009B6F5B /* ZXTwoViewController.m */; settings = {ASSET_TAGS = (); }; };
 		CB582B9B1BD521DD009B6F5B /* ZXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB582B9A1BD521DD009B6F5B /* ZXNavigationController.m */; settings = {ASSET_TAGS = (); }; };
@@ -47,6 +48,8 @@
 		CB13B1FA1BD37C2D00A6816D /* ZXMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMessageViewController.m; sourceTree = "<group>"; };
 		CB13B1FE1BD3951200A6816D /* UIBarButtonItem+Expention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Expention.h"; sourceTree = "<group>"; };
 		CB13B1FF1BD3951200A6816D /* UIBarButtonItem+Expention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Expention.m"; sourceTree = "<group>"; };
+		CB224A931BDB206C008CA13B /* ZXPopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPopController.h; sourceTree = "<group>"; };
+		CB224A941BDB206C008CA13B /* ZXPopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPopController.m; sourceTree = "<group>"; };
 		CB582B8E1BD51A46009B6F5B /* ZXOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXOneViewController.h; sourceTree = "<group>"; };
 		CB582B8F1BD51A46009B6F5B /* ZXOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXOneViewController.m; sourceTree = "<group>"; };
 		CB582B911BD51A50009B6F5B /* ZXTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTwoViewController.h; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 			children = (
 				CB6C502C1BD7CDF000C43E32 /* ZXTitleBtn.h */,
 				CB6C502D1BD7CDF000C43E32 /* ZXTitleBtn.m */,
+				CB224A931BDB206C008CA13B /* ZXPopController.h */,
+				CB224A941BDB206C008CA13B /* ZXPopController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB6C50311BD7D45B00C43E32 /* UIView+Extension.m in Sources */,
+				CB224A951BDB206C008CA13B /* ZXPopController.m in Sources */,
 				CB13B1F81BD37C1C00A6816D /* ZXMeViewController.m in Sources */,
 				CB582B9B1BD521DD009B6F5B /* ZXNavigationController.m in Sources */,
 				CB13B2001BD3951200A6816D /* UIBarButtonItem+Expention.m in Sources */,

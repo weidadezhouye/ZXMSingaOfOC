@@ -9,6 +9,7 @@
 #import "ZXHomeViewController.h"
 #import "ZXOneViewController.h"
 #import "ZXTitleBtn.h"
+#import "ZXPopController.h"
 
 @interface ZXHomeViewController ()
 
@@ -29,8 +30,12 @@
     
 //    将自定义的按钮为标题位置视图赋值
     self.navigationItem.titleView = titleBtn;
+//    为按钮添加点击事件
+    [titleBtn addTarget:self action:@selector(titleBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     
 }
+
+
 
 
 
@@ -49,6 +54,24 @@
     [self.navigationController pushViewController:oneVc animated:YES];
 }
 
+
+//今天title按钮的点击事件
+- (void)titleBtnClick:(ZXTitleBtn*)btn
+{
+//    创建一个View
+    UIView *view  = [[UIView alloc] init];
+    view.bounds = CGRectMake(0, 0, 80, 120);
+    view.backgroundColor = [UIColor redColor];
+
+//    创建popController
+    ZXPopController *popController = [[ZXPopController alloc] initWithView:view];
+    
+//    展示popController
+    [popController showInView:btn];
+    NSLog(@"我来了");
+    
+    
+}
 
 
 
