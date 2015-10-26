@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum
+{
+   positionBottonLift,
+    positionBottonCenter,
+    positionBottonRight,
+} positionBotton;
+
+
 @interface ZXPopController : NSObject
 
 
@@ -18,5 +26,15 @@
 
 //展示View
 - (void)showInView:(UIView *)view;
+
+//从外界传入一个设置透明度的属性
+@property(nonatomic,assign) CGFloat alpha;
+
+
+- (void)dismiss;
+
+
+//展示View（在什么位置展示）
+- (void)showInView:(UIView *)view WithPosition:(positionBotton )position;
 
 @end

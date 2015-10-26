@@ -12,7 +12,7 @@
 #import "ZXMessageViewController.h"
 #import "ZXDiscoverViewController.h"
 #import "ZXNavigationController.h"
-
+#import "ZXTabBar.h"
 
 @interface ZXTabBarController ()
 
@@ -35,7 +35,18 @@
 //        [self addChildViewController:nav];
 //        
 //    }
- 
+    ZXTabBar *tabbar = [[ZXTabBar alloc] init];
+#warning 当碰到私有属性不能转化的时候，可以使用kvc的方式设置
+    [self setValue:tabbar forKey:@"tabBar"];
+    
+    [self addChildTabBarItems];
+   
+    
+}
+
+//添加底部的按钮
+- (void)addChildTabBarItems
+{
     ZXHomeViewController *homeVc = [[ZXHomeViewController alloc] init];
     [self addChildVc:homeVc title:@"主页" nolImageName:@"tabbar_home" selImageName:@"tabbar_home_selected"];
     
@@ -49,6 +60,8 @@
     [self addChildVc:meVc title:@"我" nolImageName:@"tabbar_profile" selImageName:@"tabbar_profile_selected"];
     
 }
+
+
 //为导航添加子控制器
 - (void)addChildVc:(UITableViewController *)vc title:(NSString *)title
       nolImageName:(NSString *)nolImageName selImageName:(NSString *)selImageName
@@ -67,5 +80,9 @@
     
 }
 
-
+//这个方法不调用的话就会在切换的时候看不到橙色的字体颜色
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
+    [tabBar layoutSubviews];
+}
 @end

@@ -11,7 +11,7 @@
 @implementation NSBundle (Expention)
 
 //返回一个xib加载的路径的view
-+ (instancetype)loadViewWithNibName:(NSString*)nibName
++ (id)loadViewWithNibName:(NSString*)nibName
 {
     return [[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil].lastObject;
 }

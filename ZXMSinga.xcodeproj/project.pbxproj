@@ -26,6 +26,12 @@
 		CB6C502B1BD78DB800C43E32 /* NSBundle+Expention.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C502A1BD78DB800C43E32 /* NSBundle+Expention.m */; settings = {ASSET_TAGS = (); }; };
 		CB6C502E1BD7CDF000C43E32 /* ZXTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C502D1BD7CDF000C43E32 /* ZXTitleBtn.m */; settings = {ASSET_TAGS = (); }; };
 		CB6C50311BD7D45B00C43E32 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C50301BD7D45B00C43E32 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		CBF260CB1BDCF30C003878D7 /* ZXNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF260CA1BDCF30C003878D7 /* ZXNewFeatureController.m */; settings = {ASSET_TAGS = (); }; };
+		CBF260CE1BDCFC23003878D7 /* ZXEnterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF260CD1BDCFC23003878D7 /* ZXEnterView.m */; settings = {ASSET_TAGS = (); }; };
+		CBF260D01BDCFC30003878D7 /* ZXEnterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF260CF1BDCFC30003878D7 /* ZXEnterView.xib */; settings = {ASSET_TAGS = (); }; };
+		CBF495E11BDBB698001AEF26 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF495E01BDBB698001AEF26 /* UIImage+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		CBF495E51BDBBD6B001AEF26 /* ZXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF495E41BDBBD6B001AEF26 /* ZXTabBar.m */; settings = {ASSET_TAGS = (); }; };
+		CBF66CFE1BDE4C1C00937A82 /* NSUserDefaults+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF66CFD1BDE4C1C00937A82 /* NSUserDefaults+Extension.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +72,18 @@
 		CB6C502D1BD7CDF000C43E32 /* ZXTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTitleBtn.m; sourceTree = "<group>"; };
 		CB6C502F1BD7D45B00C43E32 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		CB6C50301BD7D45B00C43E32 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		CBF260C91BDCF30C003878D7 /* ZXNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNewFeatureController.h; sourceTree = "<group>"; };
+		CBF260CA1BDCF30C003878D7 /* ZXNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNewFeatureController.m; sourceTree = "<group>"; };
+		CBF260CC1BDCFC23003878D7 /* ZXEnterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXEnterView.h; sourceTree = "<group>"; };
+		CBF260CD1BDCFC23003878D7 /* ZXEnterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXEnterView.m; sourceTree = "<group>"; };
+		CBF260CF1BDCFC30003878D7 /* ZXEnterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXEnterView.xib; sourceTree = "<group>"; };
+		CBF495DF1BDBB698001AEF26 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		CBF495E01BDBB698001AEF26 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		CBF495E21BDBB6C0001AEF26 /* ZXCartegry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXCartegry.h; sourceTree = "<group>"; };
+		CBF495E31BDBBD6B001AEF26 /* ZXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTabBar.h; sourceTree = "<group>"; };
+		CBF495E41BDBBD6B001AEF26 /* ZXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTabBar.m; sourceTree = "<group>"; };
+		CBF66CFC1BDE4C1C00937A82 /* NSUserDefaults+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Extension.h"; sourceTree = "<group>"; };
+		CBF66CFD1BDE4C1C00937A82 /* NSUserDefaults+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +116,7 @@
 		CB13B1BC1BD34B7900A6816D /* ZXMSinga */ = {
 			isa = PBXGroup;
 			children = (
+				CBF260C51BDCEED8003878D7 /* NewFeature(新特性) */,
 				CB13B1D41BD3794300A6816D /* Classes */,
 				CB13B1C91BD34B7900A6816D /* Assets.xcassets */,
 				CB13B1CB1BD34B7900A6816D /* LaunchScreen.storyboard */,
@@ -235,6 +254,8 @@
 		CB13B1E01BD3794300A6816D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CBF495E31BDBBD6B001AEF26 /* ZXTabBar.h */,
+				CBF495E41BDBBD6B001AEF26 /* ZXTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,12 +346,17 @@
 		CB13B1FD1BD3918600A6816D /* cartegry */ = {
 			isa = PBXGroup;
 			children = (
+				CBF495E21BDBB6C0001AEF26 /* ZXCartegry.h */,
 				CB6C502F1BD7D45B00C43E32 /* UIView+Extension.h */,
 				CB6C50301BD7D45B00C43E32 /* UIView+Extension.m */,
+				CBF495DF1BDBB698001AEF26 /* UIImage+Extension.h */,
+				CBF495E01BDBB698001AEF26 /* UIImage+Extension.m */,
 				CB13B1FE1BD3951200A6816D /* UIBarButtonItem+Expention.h */,
 				CB13B1FF1BD3951200A6816D /* UIBarButtonItem+Expention.m */,
 				CB6C50291BD78DB800C43E32 /* NSBundle+Expention.h */,
 				CB6C502A1BD78DB800C43E32 /* NSBundle+Expention.m */,
+				CBF66CFC1BDE4C1C00937A82 /* NSUserDefaults+Extension.h */,
+				CBF66CFD1BDE4C1C00937A82 /* NSUserDefaults+Extension.m */,
 			);
 			path = cartegry;
 			sourceTree = "<group>";
@@ -344,6 +370,43 @@
 				CB582B921BD51A50009B6F5B /* ZXTwoViewController.m */,
 			);
 			path = Tmb;
+			sourceTree = "<group>";
+		};
+		CBF260C51BDCEED8003878D7 /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				CBF260C61BDCEED8003878D7 /* Controller */,
+				CBF260C71BDCEED8003878D7 /* Model */,
+				CBF260C81BDCEED8003878D7 /* View */,
+			);
+			name = "NewFeature(新特性)";
+			path = "Classes/NewFeature(新特性)";
+			sourceTree = "<group>";
+		};
+		CBF260C61BDCEED8003878D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBF260C91BDCF30C003878D7 /* ZXNewFeatureController.h */,
+				CBF260CA1BDCF30C003878D7 /* ZXNewFeatureController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBF260C71BDCEED8003878D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBF260C81BDCEED8003878D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBF260CC1BDCFC23003878D7 /* ZXEnterView.h */,
+				CBF260CD1BDCFC23003878D7 /* ZXEnterView.m */,
+				CBF260CF1BDCFC30003878D7 /* ZXEnterView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,6 +471,7 @@
 				CB13B1CD1BD34B7900A6816D /* LaunchScreen.storyboard in Resources */,
 				CB13B1CA1BD34B7900A6816D /* Assets.xcassets in Resources */,
 				CB6C50281BD78B3200C43E32 /* ZXSearchView.xib in Resources */,
+				CBF260D01BDCFC30003878D7 /* ZXEnterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,17 +484,22 @@
 			files = (
 				CB6C50311BD7D45B00C43E32 /* UIView+Extension.m in Sources */,
 				CB224A951BDB206C008CA13B /* ZXPopController.m in Sources */,
+				CBF495E11BDBB698001AEF26 /* UIImage+Extension.m in Sources */,
 				CB13B1F81BD37C1C00A6816D /* ZXMeViewController.m in Sources */,
 				CB582B9B1BD521DD009B6F5B /* ZXNavigationController.m in Sources */,
 				CB13B2001BD3951200A6816D /* UIBarButtonItem+Expention.m in Sources */,
+				CBF66CFE1BDE4C1C00937A82 /* NSUserDefaults+Extension.m in Sources */,
 				CB13B1FB1BD37C2D00A6816D /* ZXMessageViewController.m in Sources */,
 				CB6C50261BD78B1000C43E32 /* ZXSearchView.m in Sources */,
 				CB6C502E1BD7CDF000C43E32 /* ZXTitleBtn.m in Sources */,
 				CB582B931BD51A50009B6F5B /* ZXTwoViewController.m in Sources */,
 				CB13B1EF1BD37A6900A6816D /* ZXTabBarController.m in Sources */,
+				CBF260CE1BDCFC23003878D7 /* ZXEnterView.m in Sources */,
+				CBF495E51BDBBD6B001AEF26 /* ZXTabBar.m in Sources */,
 				CB13B1F21BD37BE800A6816D /* ZXDiscoverViewController.m in Sources */,
 				CB13B1F51BD37BFA00A6816D /* ZXHomeViewController.m in Sources */,
 				CB13B1EC1BD37A1400A6816D /* AppDelegate.m in Sources */,
+				CBF260CB1BDCF30C003878D7 /* ZXNewFeatureController.m in Sources */,
 				CB13B1BF1BD34B7900A6816D /* main.m in Sources */,
 				CB582B901BD51A46009B6F5B /* ZXOneViewController.m in Sources */,
 				CB6C502B1BD78DB800C43E32 /* NSBundle+Expention.m in Sources */,

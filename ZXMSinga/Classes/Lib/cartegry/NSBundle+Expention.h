@@ -11,6 +11,6 @@
 @interface NSBundle (Expention)
 
 //返回一个xib加载的路径de  view
-+ (instancetype)loadViewWithNibName:(NSString*)nibName;
++ (id)loadViewWithNibName:(NSString*)nibName;
 
 @end

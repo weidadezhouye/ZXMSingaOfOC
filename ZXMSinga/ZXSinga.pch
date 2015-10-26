@@ -9,10 +9,6 @@
 #ifndef ZXSinga_pch
 #define ZXSinga_pch
 
-#import "UIBarButtonItem+Expention.h"
-
-#import "NSBundle+Expention.h"
-
-#import "UIView+Extension.h"
+#import "ZXCartegry.h"
 
 #endif /* ZXSinga_pch */

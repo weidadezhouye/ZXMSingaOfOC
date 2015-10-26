@@ -13,6 +13,8 @@
 
 @interface ZXHomeViewController ()
 
+@property(nonatomic,strong) ZXPopController *popController;
+
 @end
 
 @implementation ZXHomeViewController
@@ -58,22 +60,35 @@
 //今天title按钮的点击事件
 - (void)titleBtnClick:(ZXTitleBtn*)btn
 {
-//    创建一个View
-    UIView *view  = [[UIView alloc] init];
-    view.bounds = CGRectMake(0, 0, 80, 120);
-    view.backgroundColor = [UIColor redColor];
+#warning 如果没有才进行创建，相当于懒加载
+    if(!self.popController)
+    {
+        //    创建一个View
+        UIButton *view  = [[UIButton alloc] init];
+        view.bounds = CGRectMake(0, 0, 100, 140);
+        view.backgroundColor = [UIColor redColor];
+        //    添加点击事件
+        [view addTarget:self action:@selector(popViewClick) forControlEvents:UIControlEventTouchUpInside];
+        
+        //    创建popController
+        ZXPopController *popController = [[ZXPopController alloc] initWithView:view];
+        
+        popController.alpha = 0.5;
+        
+        self.popController = popController;
+    }
 
-//    创建popController
-    ZXPopController *popController = [[ZXPopController alloc] initWithView:view];
+//    展示popController (可以带有位置)
+    [self.popController showInView:btn WithPosition:positionBottonRight];
     
-//    展示popController
-    [popController showInView:btn];
-    NSLog(@"我来了");
     
     
 }
 
-
+- (void)popViewClick
+{
+    [self.popController dismiss];
+}
 
 
 - (void)didReceiveMemoryWarning {
