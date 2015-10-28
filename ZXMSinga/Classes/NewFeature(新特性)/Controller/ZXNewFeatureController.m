@@ -24,6 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    NSLog(@"我是用来上传的");
+    
 //    创建轮播控制器
     UIScrollView * scrollView = [[UIScrollView alloc] init];
 //    设置代理
