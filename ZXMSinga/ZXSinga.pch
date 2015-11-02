@@ -10,5 +10,19 @@
 #define ZXSinga_pch
 
 #import "ZXCartegry.h"
+#import "ZXAccout.h"
+#import "MJExtension.h"
+
+
+
+//应用的配置信息
+#define zxClientId @"2003436477"
+
+#define zxRedirectUri @"http://www.baidu.com"
+
+#define zxClientSecret @"8b20f076f044c90230773320187659b4"
+
+#define zxGrantType @"authorization_code"
+
 
 #endif /* ZXSinga_pch */

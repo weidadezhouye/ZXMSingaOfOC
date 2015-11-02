@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "ZXTabBarController.h"
 #import "ZXNewFeatureController.h"
-
+#import "ZXOAuthController.h"
 
 @interface AppDelegate ()
 
@@ -39,9 +39,21 @@
 
     }else
     {
-//        进入主控制器
-        ZXTabBarController *tabVc = [[ZXTabBarController alloc] init];
-        window.rootViewController = tabVc;
+//        获取用户状态判断是否登录
+        ZXAccout * accout = [ZXAccout shareAccout];
+        
+        if(accout.isLogin)
+        {
+            //        进入主控制器
+            ZXTabBarController *tabVc = [[ZXTabBarController alloc] init];
+            window.rootViewController = tabVc;
+        }else
+        {
+        
+           ZXOAuthController *oaVc = [[ZXOAuthController alloc] init];
+ 
+           window.rootViewController = oaVc;
+        }
     }
     
     

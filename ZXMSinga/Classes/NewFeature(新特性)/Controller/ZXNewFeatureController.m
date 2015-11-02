@@ -14,7 +14,6 @@
 
 @property(nonatomic,strong) UIPageControl *pageCol;
 
-
 @end
 
 @implementation ZXNewFeatureController

@@ -8,6 +8,7 @@
 
 #import "ZXEnterView.h"
 #import "ZXTabBarController.h"
+#import "ZXOAuthController.h"
 
 @implementation ZXEnterView
 
@@ -30,9 +31,23 @@
 //    保存当前的版本号到沙盒
     [NSUserDefaults saveCurrentVersion];
     
-    ZXTabBarController *tabBarColVc = [[ZXTabBarController alloc] init];
+    //        获取用户状态判断是否登录
+    ZXAccout * accout = [ZXAccout shareAccout];
     
-    [UIApplication sharedApplication].keyWindow.rootViewController = tabBarColVc;
+    if(accout.isLogin)
+    {
+        //        进入主控制器
+        ZXTabBarController *tabVc = [[ZXTabBarController alloc] init];
+        [UIApplication sharedApplication].keyWindow.rootViewController = tabVc;
+    }else
+    {
+        
+        ZXOAuthController *oaVc = [[ZXOAuthController alloc] init];
+        
+        [UIApplication sharedApplication].keyWindow.rootViewController = oaVc;
+    }
+
+    
     
 }
 
