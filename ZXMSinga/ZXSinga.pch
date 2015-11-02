@@ -12,8 +12,8 @@
 #import "ZXCartegry.h"
 #import "ZXAccout.h"
 #import "MJExtension.h"
-
-
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
 
 //应用的配置信息
 #define zxClientId @"2003436477"
