@@ -12,6 +12,7 @@
 #import "ZXPopController.h"
 #import "ZXStatus.h"
 #import "ZXUser.h"
+#import "ZXFooterView.h"
 
 
 @interface ZXHomeViewController ()
@@ -24,6 +25,8 @@
 
 //刷新控制器
 @property(nonatomic,strong) UIRefreshControl *refVc;
+
+@property(nonatomic,strong)ZXFooterView *footerView;
 
 
 @end
@@ -53,10 +56,27 @@
 //    导航栏
     [self setupNavtionitem];
 //    微博数据
-    [self setupStatusWithSinceID:0];
+    [self setupStatusWithSinceID:@"0"];
 //  刷新
     [self setupRefreshControl];
+
+
 }
+
+#pragma mark - 设置底部和顶部的刷新视图
+- (void)loadFooterView{
+//    没有footerView才添加
+    if(!self.tableView.tableFooterView)
+    {
+    //    设置底部下拉刷新
+    ZXFooterView *footerView = [ZXFooterView footerView];
+    
+    self.tableView.tableFooterView = footerView;
+    
+    self.footerView = footerView;
+    }
+}
+
 //刷新
 - (void)setupRefreshControl{
     
@@ -79,6 +99,8 @@
     
 }
 
+
+#pragma mark - 上拉刷新和下拉刷新加载微博数据
 //设置微博数据
 - (void)setupStatusWithSinceID:(NSString*)sinceID
 {
@@ -87,7 +109,12 @@
     AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
     NSMutableDictionary *parame = [NSMutableDictionary dictionary];
     parame[@"access_token"] = [ZXAccout shareAccout].access_token;
-    parame[@"since_id"] = sinceID;
+//    防止第一次加载的时候数组里面还没有元素
+    if(sinceID)
+    {
+        parame[@"since_id"] = sinceID;
+    }
+    
 //    parame[@"count"] = @(20);
 
 //    get请求数据
@@ -112,9 +139,20 @@
         
         [self.statues insertObjects:statusesArr atIndexes:set];
         
+        [self loadStatusCount:statuses.count];
+        
+//        微博模型数组里面有元素的的时候才开始添加footerView
+        if(self.statues.count > 0)
+        {
+            //    加载底部
+            [self loadFooterView];
+        }
+        
         [self.tableView reloadData];
 //        结束刷新
         [self.refVc endRefreshing];
+        
+       
 
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
@@ -122,6 +160,40 @@
     
     
 }
+
+//加载更多数据
+- (void)loadMoreStatus{
+    
+    //    加载更多数据
+    NSString *url = @"https://api.weibo.com/2/statuses/home_timeline.json";
+    
+    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+    NSMutableDictionary *parame = [NSMutableDictionary dictionary];
+    parame[@"access_token"] = [ZXAccout shareAccout].access_token;
+    
+    ZXStatus * last = [self.statues lastObject];
+    parame[@"max_id"] = @([last.idstr integerValue] - 1);
+    
+    //    get请求数据
+    [manager GET:url parameters:parame success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSArray * statuses = responseObject[@"statuses"];
+        
+        NSArray * statusesArr = [ZXStatus objectArrayWithKeyValuesArray:statuses];
+        
+        
+        [self.statues addObjectsFromArray:statusesArr];
+        
+        [self.tableView reloadData];
+        //        结束刷新
+        self.footerView.loading = NO;
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",error);
+    }];
+    
+}
+
 
 #pragma mark - tableviewDelegate 方法的实现
 
@@ -147,6 +219,8 @@
     cell.textLabel.text = status.text;
     cell.detailTextLabel.text = status.user.screen_name;
     
+    
+    
     [cell.imageView sd_setImageWithURL:[NSURL URLWithString:status.user.profile_image_url] placeholderImage:[UIImage imageNamed:@"timeline_card_top_background_highlighted"]];
     
     
@@ -154,6 +228,7 @@
     
 }
 
+#pragma mark - 导航栏的设置
 //设置导航栏按钮
 - (void)setupNavtionitem
 {
@@ -221,9 +296,67 @@
     [self.popController dismiss];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+#pragma mark - UIScrollViewDelegate代理方法的实现，以滚动就会触发这个方法
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+//    scrollView偏移的y
+    CGFloat contentOffY = scrollView.contentOffset.y;
+    
+    CGFloat contentSizeY = self.tableView.contentSize.height;
+    
+    CGFloat scrollViewH = scrollView.h;
+    
+    CGFloat deta = contentSizeY - scrollViewH + 44 +49;
+    
+    if (deta < 0) return
+    
+    ZXLog(@"%f",contentOffY-deta);
+    if(contentOffY > deta && !self.footerView.loading )
+    {
+        //    改变菊花的状态
+        self.footerView.loading = YES;
+//        加载数据
+        [self loadMoreStatus];
+        ZXLog(@"可以刷新");
+    }
+    
+    
 }
+
+#pragma mark - 设置加载数据的label提示框：
+- (void)loadStatusCount:(NSInteger)count
+{
+    NSString * showMsg = @"没有更多数据";
+    if(count > 0)
+    {
+        showMsg = [NSString stringWithFormat:@"加载了%zd条数据",count];
+    }
+    UILabel *lab = [[UILabel alloc] init];
+    lab.text = showMsg;
+    lab.textAlignment = NSTextAlignmentCenter;
+    lab.frame = CGRectMake(0, 20, self.view.w, 44);
+    lab.backgroundColor = [UIColor orangeColor];
+    lab.textColor = [UIColor whiteColor];
+    
+//    [self.view addSubview:lab];
+    [self.navigationController.view insertSubview:lab belowSubview:self.navigationController.navigationBar];
+    
+//    动画弹出提示消息文本框
+    [UIView animateWithDuration:1 animations:^{
+        lab.y += 44;
+    } completion:^(BOOL finished) {
+        
+//        嵌套两层动画，里面是消失并且移除的动画
+        [UIView animateWithDuration:1 animations:^{
+            lab.y -= 44;
+        } completion:^(BOOL finished) {
+           [lab removeFromSuperview];
+        }];
+        
+    }];
+    
+    
+}
+
 
 @end

@@ -13,8 +13,11 @@
 #import "ZXDiscoverViewController.h"
 #import "ZXNavigationController.h"
 #import "ZXTabBar.h"
+#import "ZXComposeController.h"
+#import "ZXAccout.h"
+#import "ZXOAuthController.h"
 
-@interface ZXTabBarController ()
+@interface ZXTabBarController ()<ZXTabBarDelegate>
 
 @end
 
@@ -36,6 +39,10 @@
 //        
 //    }
     ZXTabBar *tabbar = [[ZXTabBar alloc] init];
+//    设置代理
+    tabbar.delegate = self;
+    
+    
 #warning 当碰到私有属性不能转化的时候，可以使用kvc的方式设置
     [self setValue:tabbar forKey:@"tabBar"];
     
@@ -85,4 +92,25 @@
 {
     [tabBar layoutSubviews];
 }
+
+#pragma mark - ZXTabBarDelegate代理方法的实现
+- (void)tabBar:(ZXTabBar *)tabBar plusBtn:(UIButton *)plusBtn
+{
+//    创建
+    ZXAccout * accout = [ZXAccout shareAccout];
+    ZXOAuthController * oaVc = [[ZXOAuthController alloc] init];
+    ZXComposeController *cmpVc = [[ZXComposeController alloc] init];
+//    判断是否登录
+    if(accout.isLogin)
+    {//如果已经登录，就进入发说说的控制器
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:cmpVc];
+        [self presentViewController:nav animated:YES completion:nil];
+    }else
+    {
+        [UIApplication sharedApplication].keyWindow.rootViewController = oaVc;
+    }
+    
+    
+}
+
 @end

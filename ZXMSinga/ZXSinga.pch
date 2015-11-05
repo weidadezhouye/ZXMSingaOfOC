@@ -25,4 +25,15 @@
 #define zxGrantType @"authorization_code"
 
 
+//自定义Log
+#ifdef DEBUG //... 可变参数
+// #define  CZLog(...) NSLog(__VA_ARGS__)
+#define  ZXLog(...) NSLog(@"%s %d \n %@ \n\n",__func__,__LINE__, [NSString stringWithFormat:__VA_ARGS__]);
+#elif
+#define  ZXLog(...)
+#endif
+
+
+
+
 #endif /* ZXSinga_pch */

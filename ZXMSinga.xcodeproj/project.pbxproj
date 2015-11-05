@@ -60,6 +60,11 @@
 		CB6C502B1BD78DB800C43E32 /* NSBundle+Expention.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C502A1BD78DB800C43E32 /* NSBundle+Expention.m */; settings = {ASSET_TAGS = (); }; };
 		CB6C502E1BD7CDF000C43E32 /* ZXTitleBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C502D1BD7CDF000C43E32 /* ZXTitleBtn.m */; settings = {ASSET_TAGS = (); }; };
 		CB6C50311BD7D45B00C43E32 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C50301BD7D45B00C43E32 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		CB9AA20B1BEA340B00D91E7E /* ZXFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9AA20A1BEA340B00D91E7E /* ZXFooterView.m */; settings = {ASSET_TAGS = (); }; };
+		CB9AA20D1BEA341C00D91E7E /* ZXFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9AA20C1BEA341C00D91E7E /* ZXFooterView.xib */; settings = {ASSET_TAGS = (); }; };
+		CBF22BB71BEB3B8C003CB3D5 /* ZXComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF22BB61BEB3B8C003CB3D5 /* ZXComposeController.m */; settings = {ASSET_TAGS = (); }; };
+		CBF22BBA1BEB4387003CB3D5 /* ZXToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF22BB91BEB4387003CB3D5 /* ZXToolBar.m */; settings = {ASSET_TAGS = (); }; };
+		CBF22BBD1BEB50B3003CB3D5 /* ZXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF22BBC1BEB50B3003CB3D5 /* ZXTextView.m */; settings = {ASSET_TAGS = (); }; };
 		CBF260CB1BDCF30C003878D7 /* ZXNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF260CA1BDCF30C003878D7 /* ZXNewFeatureController.m */; settings = {ASSET_TAGS = (); }; };
 		CBF260CE1BDCFC23003878D7 /* ZXEnterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF260CD1BDCFC23003878D7 /* ZXEnterView.m */; settings = {ASSET_TAGS = (); }; };
 		CBF260D01BDCFC30003878D7 /* ZXEnterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF260CF1BDCFC30003878D7 /* ZXEnterView.xib */; settings = {ASSET_TAGS = (); }; };
@@ -177,6 +182,15 @@
 		CB6C502D1BD7CDF000C43E32 /* ZXTitleBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTitleBtn.m; sourceTree = "<group>"; };
 		CB6C502F1BD7D45B00C43E32 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		CB6C50301BD7D45B00C43E32 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		CB9AA2091BEA340B00D91E7E /* ZXFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFooterView.h; sourceTree = "<group>"; };
+		CB9AA20A1BEA340B00D91E7E /* ZXFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXFooterView.m; sourceTree = "<group>"; };
+		CB9AA20C1BEA341C00D91E7E /* ZXFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXFooterView.xib; sourceTree = "<group>"; };
+		CBF22BB51BEB3B8C003CB3D5 /* ZXComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXComposeController.h; sourceTree = "<group>"; };
+		CBF22BB61BEB3B8C003CB3D5 /* ZXComposeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXComposeController.m; sourceTree = "<group>"; };
+		CBF22BB81BEB4387003CB3D5 /* ZXToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXToolBar.h; sourceTree = "<group>"; };
+		CBF22BB91BEB4387003CB3D5 /* ZXToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXToolBar.m; sourceTree = "<group>"; };
+		CBF22BBB1BEB50B3003CB3D5 /* ZXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTextView.h; sourceTree = "<group>"; };
+		CBF22BBC1BEB50B3003CB3D5 /* ZXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTextView.m; sourceTree = "<group>"; };
 		CBF260C91BDCF30C003878D7 /* ZXNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNewFeatureController.h; sourceTree = "<group>"; };
 		CBF260CA1BDCF30C003878D7 /* ZXNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNewFeatureController.m; sourceTree = "<group>"; };
 		CBF260CC1BDCFC23003878D7 /* ZXEnterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXEnterView.h; sourceTree = "<group>"; };
@@ -262,6 +276,7 @@
 			children = (
 				CB582B8D1BD51A29009B6F5B /* Tmb */,
 				CB13B1FC1BD3918600A6816D /* Lib */,
+				CBF22BB11BEB3B46003CB3D5 /* Compose(发送) */,
 				CB045E9B1BE510F200A22682 /* OAuth(授权) */,
 				CBF260C51BDCEED8003878D7 /* NewFeature(新特性) */,
 				CB13B1DD1BD3794300A6816D /* Main(主要) */,
@@ -347,6 +362,9 @@
 				CB6C502D1BD7CDF000C43E32 /* ZXTitleBtn.m */,
 				CB224A931BDB206C008CA13B /* ZXPopController.h */,
 				CB224A941BDB206C008CA13B /* ZXPopController.m */,
+				CB9AA2091BEA340B00D91E7E /* ZXFooterView.h */,
+				CB9AA20A1BEA340B00D91E7E /* ZXFooterView.m */,
+				CB9AA20C1BEA341C00D91E7E /* ZXFooterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -596,6 +614,43 @@
 			path = Tmb;
 			sourceTree = "<group>";
 		};
+		CBF22BB11BEB3B46003CB3D5 /* Compose(发送) */ = {
+			isa = PBXGroup;
+			children = (
+				CBF22BB21BEB3B46003CB3D5 /* Controller */,
+				CBF22BB31BEB3B46003CB3D5 /* Model */,
+				CBF22BB41BEB3B46003CB3D5 /* View */,
+			);
+			path = "Compose(发送)";
+			sourceTree = "<group>";
+		};
+		CBF22BB21BEB3B46003CB3D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CBF22BB51BEB3B8C003CB3D5 /* ZXComposeController.h */,
+				CBF22BB61BEB3B8C003CB3D5 /* ZXComposeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CBF22BB31BEB3B46003CB3D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBF22BB41BEB3B46003CB3D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBF22BB81BEB4387003CB3D5 /* ZXToolBar.h */,
+				CBF22BB91BEB4387003CB3D5 /* ZXToolBar.m */,
+				CBF22BBB1BEB50B3003CB3D5 /* ZXTextView.h */,
+				CBF22BBC1BEB50B3003CB3D5 /* ZXTextView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CBF260C51BDCEED8003878D7 /* NewFeature(新特性) */ = {
 			isa = PBXGroup;
 			children = (
@@ -695,6 +750,7 @@
 				CB13B1CA1BD34B7900A6816D /* Assets.xcassets in Resources */,
 				CB6C50281BD78B3200C43E32 /* ZXSearchView.xib in Resources */,
 				CBF260D01BDCFC30003878D7 /* ZXEnterView.xib in Resources */,
+				CB9AA20D1BEA341C00D91E7E /* ZXFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,14 +766,17 @@
 				CB1B44981BE6F66100F112E3 /* AFURLConnectionOperation.m in Sources */,
 				CB6C50311BD7D45B00C43E32 /* UIView+Extension.m in Sources */,
 				CB1B44AC1BE70AB200F112E3 /* MJConst.m in Sources */,
+				CB9AA20B1BEA340B00D91E7E /* ZXFooterView.m in Sources */,
 				CB1B44E61BE78C6B00F112E3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				CB224A951BDB206C008CA13B /* ZXPopController.m in Sources */,
 				CB1B44DB1BE78C6B00F112E3 /* NSData+ImageContentType.m in Sources */,
 				CB1B44931BE6F66100F112E3 /* AFHTTPRequestOperation.m in Sources */,
 				CB1B44E01BE78C6B00F112E3 /* SDWebImageDownloaderOperation.m in Sources */,
 				CB1B449A1BE6F66100F112E3 /* AFURLResponseSerialization.m in Sources */,
+				CBF22BBD1BEB50B3003CB3D5 /* ZXTextView.m in Sources */,
 				CB1B44DE1BE78C6B00F112E3 /* SDWebImageDecoder.m in Sources */,
 				CBF495E11BDBB698001AEF26 /* UIImage+Extension.m in Sources */,
+				CBF22BB71BEB3B8C003CB3D5 /* ZXComposeController.m in Sources */,
 				CB1B44B61BE70D2600F112E3 /* ZXAccout.m in Sources */,
 				CB13B1F81BD37C1C00A6816D /* ZXMeViewController.m in Sources */,
 				CB582B9B1BD521DD009B6F5B /* ZXNavigationController.m in Sources */,
@@ -758,6 +817,7 @@
 				CB13B1BF1BD34B7900A6816D /* main.m in Sources */,
 				CB1B44E71BE78C6B00F112E3 /* UIImageView+WebCache.m in Sources */,
 				CB1B44DC1BE78C6B00F112E3 /* SDImageCache.m in Sources */,
+				CBF22BBA1BEB4387003CB3D5 /* ZXToolBar.m in Sources */,
 				CB582B901BD51A46009B6F5B /* ZXOneViewController.m in Sources */,
 				CB6C502B1BD78DB800C43E32 /* NSBundle+Expention.m in Sources */,
 			);

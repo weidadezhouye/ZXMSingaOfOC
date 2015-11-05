@@ -8,6 +8,7 @@
 
 #import "ZXTabBar.h"
 
+
 @interface ZXTabBar ()
 
 @property(nonatomic,weak)UIButton *plusBtn;
@@ -21,7 +22,7 @@
 {
     if(self = [super initWithFrame:frame])
     {
-        [self setBackgroundImage:[UIImage imageNamed:@"tabbar_background_os7"]];
+//        [self setBackgroundImage:[UIImage imageNamed:@"tabbar_background_os7"]];
 //       只需要设置中间的加号按钮即可
         [self setupPlusBtn];
     }
@@ -41,12 +42,21 @@
     [plusBtn setImage:[UIImage imageNamed:@"tabbar_compose_icon_add_highlighted"] forState:UIControlStateHighlighted];
 //    写死加号按钮的大小
     plusBtn.size = CGSizeMake(64, 44);
-//    添加
+    
+    [plusBtn addTarget:self action:@selector(plusBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+
+    //    添加
     [self addSubview:plusBtn];
 //    赋值
     self.plusBtn = plusBtn;
 }
 
+- (void)plusBtnClick:(UIButton *)plusBtn{
+    if([self.delegate respondsToSelector:@selector(tabBar:plusBtn:)])
+    {
+        [self.delegate tabBar:self plusBtn:plusBtn];
+    }
+}
 
 //布局子控件
 - (void)layoutSubviews

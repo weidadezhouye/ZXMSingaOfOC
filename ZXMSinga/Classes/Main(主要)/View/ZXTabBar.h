@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ZXTabBar;
+
+@protocol ZXTabBarDelegate <NSObject>
+
+- (void)tabBar:(ZXTabBar *)tabBar plusBtn:(UIButton *)plusBtn;
+
+@end
+
 
 @interface ZXTabBar : UITabBar
+
+@property(nonatomic,weak)id<ZXTabBarDelegate> delegate;
 
 @end

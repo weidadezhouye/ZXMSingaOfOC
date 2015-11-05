@@ -19,7 +19,7 @@
 //    获得全局的导航条
     UINavigationBar *navBar = [UINavigationBar appearance];
 //    设置导航条的背景图片
-    [navBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_background_os7"] forBarMetrics:UIBarMetricsDefault];
+//    [navBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_background_os7"] forBarMetrics:UIBarMetricsDefault];
 //  创建阴影
     NSShadow *shadow = [[NSShadow alloc] init];
     [shadow setShadowOffset:CGSizeMake(5, -5)];
