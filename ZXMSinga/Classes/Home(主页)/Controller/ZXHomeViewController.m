@@ -28,6 +28,9 @@
 
 @property(nonatomic,strong)ZXFooterView *footerView;
 
+//保存标题（也就是用户名）
+@property(nonatomic,strong) ZXTitleBtn *titleBtn;
+
 
 @end
 
@@ -53,6 +56,8 @@
     [self.tableView reloadData];
     
     [ZXAccout shareAccout];
+//    获取用户名
+    [self getUserName];
 //    导航栏
     [self setupNavtionitem];
 //    微博数据
@@ -106,7 +111,7 @@
 {
     NSString *url = @"https://api.weibo.com/2/statuses/home_timeline.json";
     
-    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+    
     NSMutableDictionary *parame = [NSMutableDictionary dictionary];
     parame[@"access_token"] = [ZXAccout shareAccout].access_token;
 //    防止第一次加载的时候数组里面还没有元素
@@ -118,7 +123,7 @@
 //    parame[@"count"] = @(20);
 
 //    get请求数据
-    [manager GET:url parameters:parame success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [ZXHttpTool GET:url parameters:parame success:^( id responseObject) {
 
         
         NSArray * statuses = responseObject[@"statuses"];
@@ -154,7 +159,7 @@
         
        
 
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSError *error) {
         NSLog(@"%@",error);
     }];
     
@@ -167,7 +172,7 @@
     //    加载更多数据
     NSString *url = @"https://api.weibo.com/2/statuses/home_timeline.json";
     
-    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
+    
     NSMutableDictionary *parame = [NSMutableDictionary dictionary];
     parame[@"access_token"] = [ZXAccout shareAccout].access_token;
     
@@ -175,7 +180,7 @@
     parame[@"max_id"] = @([last.idstr integerValue] - 1);
     
     //    get请求数据
-    [manager GET:url parameters:parame success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [ZXHttpTool GET:url parameters:parame success:^(id responseObject) {
         
         NSArray * statuses = responseObject[@"statuses"];
         
@@ -188,12 +193,36 @@
         //        结束刷新
         self.footerView.loading = NO;
         
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    } failure:^(NSError *error) {
         NSLog(@"%@",error);
     }];
     
 }
 
+- (void)getUserName
+{
+    //    加载更多数据
+    NSString *url = @"https://api.weibo.com/2/users/show.json";
+    
+    
+    NSMutableDictionary *parame = [NSMutableDictionary dictionary];
+    parame[@"access_token"] = [ZXAccout shareAccout].access_token;
+    parame[@"uid"] = [ZXAccout shareAccout].uid;
+    
+    //    get请求数据
+    [ZXHttpTool GET:url parameters:parame success:^(id responseObject) {
+        
+        ZXUser * user = [ZXUser objectWithKeyValues:responseObject];
+        
+        [self.titleBtn setTitle:user.screen_name forState:UIControlStateNormal];
+        
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
+
+    
+    
+}
 
 #pragma mark - tableviewDelegate 方法的实现
 
@@ -239,7 +268,7 @@
     //    为了响应首页title的点击，故而title这个位置必须放置button
     //    创建button(使用自定义的)
     ZXTitleBtn *titleBtn = [ZXTitleBtn buttonWithType:UIButtonTypeCustom];
-    
+    self.titleBtn = titleBtn;
     //    将自定义的按钮为标题位置视图赋值
     self.navigationItem.titleView = titleBtn;
     //    为按钮添加点击事件
@@ -302,6 +331,8 @@
 //    scrollView偏移的y
     CGFloat contentOffY = scrollView.contentOffset.y;
     
+//    self.tableView.transform = CGAffineTransformMakeTranslation(0, contentOffY);
+    
     CGFloat contentSizeY = self.tableView.contentSize.height;
     
     CGFloat scrollViewH = scrollView.h;
@@ -341,19 +372,29 @@
 //    [self.view addSubview:lab];
     [self.navigationController.view insertSubview:lab belowSubview:self.navigationController.navigationBar];
     
-//    动画弹出提示消息文本框
-    [UIView animateWithDuration:1 animations:^{
-        lab.y += 44;
-    } completion:^(BOOL finished) {
+    
+    bool showingTime = CGAffineTransformEqualToTransform(self.tableView.transform, CGAffineTransformIdentity);
+    
+    if(showingTime)
+    {
         
-//        嵌套两层动画，里面是消失并且移除的动画
+        //    动画弹出提示消息文本框
         [UIView animateWithDuration:1 animations:^{
-            lab.y -= 44;
+//            lab.y += 44;
+            lab.transform = CGAffineTransformMakeTranslation(0, 44);
         } completion:^(BOOL finished) {
-           [lab removeFromSuperview];
+            
+            //        嵌套两层动画，里面是消失并且移除的动画
+            [UIView animateWithDuration:1 animations:^{
+//                lab.y -= 44;
+                lab.transform = CGAffineTransformIdentity;
+            } completion:^(BOOL finished) {
+                [lab removeFromSuperview];
+            }];
+            
         }];
-        
-    }];
+
+    }
     
     
 }

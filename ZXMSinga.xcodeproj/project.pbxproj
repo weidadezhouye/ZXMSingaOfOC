@@ -52,6 +52,7 @@
 		CB1B44E71BE78C6B00F112E3 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B44D81BE78C6B00F112E3 /* UIImageView+WebCache.m */; settings = {ASSET_TAGS = (); }; };
 		CB1B44E81BE78C6B00F112E3 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1B44DA1BE78C6B00F112E3 /* UIView+WebCacheOperation.m */; settings = {ASSET_TAGS = (); }; };
 		CB224A951BDB206C008CA13B /* ZXPopController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB224A941BDB206C008CA13B /* ZXPopController.m */; settings = {ASSET_TAGS = (); }; };
+		CB41D22A1BEC6C6C00DBDF4C /* ZXStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CB41D2291BEC6C6C00DBDF4C /* ZXStatusBar.m */; settings = {ASSET_TAGS = (); }; };
 		CB582B901BD51A46009B6F5B /* ZXOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB582B8F1BD51A46009B6F5B /* ZXOneViewController.m */; settings = {ASSET_TAGS = (); }; };
 		CB582B931BD51A50009B6F5B /* ZXTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB582B921BD51A50009B6F5B /* ZXTwoViewController.m */; settings = {ASSET_TAGS = (); }; };
 		CB582B9B1BD521DD009B6F5B /* ZXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB582B9A1BD521DD009B6F5B /* ZXNavigationController.m */; settings = {ASSET_TAGS = (); }; };
@@ -62,9 +63,11 @@
 		CB6C50311BD7D45B00C43E32 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6C50301BD7D45B00C43E32 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		CB9AA20B1BEA340B00D91E7E /* ZXFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9AA20A1BEA340B00D91E7E /* ZXFooterView.m */; settings = {ASSET_TAGS = (); }; };
 		CB9AA20D1BEA341C00D91E7E /* ZXFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9AA20C1BEA341C00D91E7E /* ZXFooterView.xib */; settings = {ASSET_TAGS = (); }; };
+		CBD9EA891BECF150005F4AEE /* ZXHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9EA881BECF150005F4AEE /* ZXHttpTool.m */; settings = {ASSET_TAGS = (); }; };
 		CBF22BB71BEB3B8C003CB3D5 /* ZXComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF22BB61BEB3B8C003CB3D5 /* ZXComposeController.m */; settings = {ASSET_TAGS = (); }; };
 		CBF22BBA1BEB4387003CB3D5 /* ZXToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF22BB91BEB4387003CB3D5 /* ZXToolBar.m */; settings = {ASSET_TAGS = (); }; };
 		CBF22BBD1BEB50B3003CB3D5 /* ZXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF22BBC1BEB50B3003CB3D5 /* ZXTextView.m */; settings = {ASSET_TAGS = (); }; };
+		CBF22BC01BEBA2CA003CB3D5 /* ZXComposePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF22BBF1BEBA2CA003CB3D5 /* ZXComposePictureView.m */; settings = {ASSET_TAGS = (); }; };
 		CBF260CB1BDCF30C003878D7 /* ZXNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF260CA1BDCF30C003878D7 /* ZXNewFeatureController.m */; settings = {ASSET_TAGS = (); }; };
 		CBF260CE1BDCFC23003878D7 /* ZXEnterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF260CD1BDCFC23003878D7 /* ZXEnterView.m */; settings = {ASSET_TAGS = (); }; };
 		CBF260D01BDCFC30003878D7 /* ZXEnterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF260CF1BDCFC30003878D7 /* ZXEnterView.xib */; settings = {ASSET_TAGS = (); }; };
@@ -166,6 +169,8 @@
 		CB1B44DA1BE78C6B00F112E3 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		CB224A931BDB206C008CA13B /* ZXPopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPopController.h; sourceTree = "<group>"; };
 		CB224A941BDB206C008CA13B /* ZXPopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPopController.m; sourceTree = "<group>"; };
+		CB41D2281BEC6C6C00DBDF4C /* ZXStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXStatusBar.h; sourceTree = "<group>"; };
+		CB41D2291BEC6C6C00DBDF4C /* ZXStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXStatusBar.m; sourceTree = "<group>"; };
 		CB582B8E1BD51A46009B6F5B /* ZXOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXOneViewController.h; sourceTree = "<group>"; };
 		CB582B8F1BD51A46009B6F5B /* ZXOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXOneViewController.m; sourceTree = "<group>"; };
 		CB582B911BD51A50009B6F5B /* ZXTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTwoViewController.h; sourceTree = "<group>"; };
@@ -185,12 +190,16 @@
 		CB9AA2091BEA340B00D91E7E /* ZXFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFooterView.h; sourceTree = "<group>"; };
 		CB9AA20A1BEA340B00D91E7E /* ZXFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXFooterView.m; sourceTree = "<group>"; };
 		CB9AA20C1BEA341C00D91E7E /* ZXFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXFooterView.xib; sourceTree = "<group>"; };
+		CBD9EA871BECF150005F4AEE /* ZXHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXHttpTool.h; sourceTree = "<group>"; };
+		CBD9EA881BECF150005F4AEE /* ZXHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXHttpTool.m; sourceTree = "<group>"; };
 		CBF22BB51BEB3B8C003CB3D5 /* ZXComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXComposeController.h; sourceTree = "<group>"; };
 		CBF22BB61BEB3B8C003CB3D5 /* ZXComposeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXComposeController.m; sourceTree = "<group>"; };
 		CBF22BB81BEB4387003CB3D5 /* ZXToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXToolBar.h; sourceTree = "<group>"; };
 		CBF22BB91BEB4387003CB3D5 /* ZXToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXToolBar.m; sourceTree = "<group>"; };
 		CBF22BBB1BEB50B3003CB3D5 /* ZXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTextView.h; sourceTree = "<group>"; };
 		CBF22BBC1BEB50B3003CB3D5 /* ZXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTextView.m; sourceTree = "<group>"; };
+		CBF22BBE1BEBA2CA003CB3D5 /* ZXComposePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXComposePictureView.h; sourceTree = "<group>"; };
+		CBF22BBF1BEBA2CA003CB3D5 /* ZXComposePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXComposePictureView.m; sourceTree = "<group>"; };
 		CBF260C91BDCF30C003878D7 /* ZXNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXNewFeatureController.h; sourceTree = "<group>"; };
 		CBF260CA1BDCF30C003878D7 /* ZXNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXNewFeatureController.m; sourceTree = "<group>"; };
 		CBF260CC1BDCFC23003878D7 /* ZXEnterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXEnterView.h; sourceTree = "<group>"; };
@@ -563,6 +572,8 @@
 			children = (
 				CB1B44B41BE70D2600F112E3 /* ZXAccout.h */,
 				CB1B44B51BE70D2600F112E3 /* ZXAccout.m */,
+				CBD9EA871BECF150005F4AEE /* ZXHttpTool.h */,
+				CBD9EA881BECF150005F4AEE /* ZXHttpTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -647,6 +658,10 @@
 				CBF22BB91BEB4387003CB3D5 /* ZXToolBar.m */,
 				CBF22BBB1BEB50B3003CB3D5 /* ZXTextView.h */,
 				CBF22BBC1BEB50B3003CB3D5 /* ZXTextView.m */,
+				CBF22BBE1BEBA2CA003CB3D5 /* ZXComposePictureView.h */,
+				CBF22BBF1BEBA2CA003CB3D5 /* ZXComposePictureView.m */,
+				CB41D2281BEC6C6C00DBDF4C /* ZXStatusBar.h */,
+				CB41D2291BEC6C6C00DBDF4C /* ZXStatusBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -769,6 +784,7 @@
 				CB9AA20B1BEA340B00D91E7E /* ZXFooterView.m in Sources */,
 				CB1B44E61BE78C6B00F112E3 /* UIImageView+HighlightedWebCache.m in Sources */,
 				CB224A951BDB206C008CA13B /* ZXPopController.m in Sources */,
+				CBF22BC01BEBA2CA003CB3D5 /* ZXComposePictureView.m in Sources */,
 				CB1B44DB1BE78C6B00F112E3 /* NSData+ImageContentType.m in Sources */,
 				CB1B44931BE6F66100F112E3 /* AFHTTPRequestOperation.m in Sources */,
 				CB1B44E01BE78C6B00F112E3 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -815,11 +831,13 @@
 				CB1B44E21BE78C6B00F112E3 /* SDWebImagePrefetcher.m in Sources */,
 				CB1B44B01BE70AB200F112E3 /* NSObject+MJCoding.m in Sources */,
 				CB13B1BF1BD34B7900A6816D /* main.m in Sources */,
+				CBD9EA891BECF150005F4AEE /* ZXHttpTool.m in Sources */,
 				CB1B44E71BE78C6B00F112E3 /* UIImageView+WebCache.m in Sources */,
 				CB1B44DC1BE78C6B00F112E3 /* SDImageCache.m in Sources */,
 				CBF22BBA1BEB4387003CB3D5 /* ZXToolBar.m in Sources */,
 				CB582B901BD51A46009B6F5B /* ZXOneViewController.m in Sources */,
 				CB6C502B1BD78DB800C43E32 /* NSBundle+Expention.m in Sources */,
+				CB41D22A1BEC6C6C00DBDF4C /* ZXStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

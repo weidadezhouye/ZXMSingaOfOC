@@ -28,18 +28,18 @@
 //设置工具条（5个按钮）
 - (void)setupToolBar{
     // 图片选择
-    [self addBtnWithNmlImg:@"compose_toolbar_picture" hltImg:@"compose_toolbar_picture_highlighted"];
+    [self addBtnWithNmlImg:@"compose_toolbar_picture" hltImg:@"compose_toolbar_picture_highlighted" tagIndex:0];
     
     // @
-    [self addBtnWithNmlImg:@"compose_mentionbutton_background" hltImg:@"compose_mentionbutton_background_highlighted"];
+    [self addBtnWithNmlImg:@"compose_mentionbutton_background" hltImg:@"compose_mentionbutton_background_highlighted" tagIndex:1];
     
     //#
-    [self addBtnWithNmlImg:@"compose_trendbutton_background" hltImg:@"compose_trendbutton_background_highlighted"];
+    [self addBtnWithNmlImg:@"compose_trendbutton_background" hltImg:@"compose_trendbutton_background_highlighted" tagIndex:2];
     
     //表情
-    [self addBtnWithNmlImg:@"compose_emoticonbutton_background" hltImg:@"compose_emoticonbutton_background_highlighted"];
+    [self addBtnWithNmlImg:@"compose_emoticonbutton_background" hltImg:@"compose_emoticonbutton_background_highlighted" tagIndex:3];
     
-    [self addBtnWithNmlImg:@"compose_addbutton_background" hltImg:@"compose_addbutton_background_highlighted"];
+    [self addBtnWithNmlImg:@"compose_addbutton_background" hltImg:@"compose_addbutton_background_highlighted" tagIndex:4];
     
 
     
@@ -49,14 +49,28 @@
 }
 
 //创建按钮
-- (void)addBtnWithNmlImg:(NSString *)nolImgName hltImg:(NSString *)hgtImgName{
+- (void)addBtnWithNmlImg:(NSString *)nolImgName hltImg:(NSString *)hgtImgName tagIndex:(NSInteger)tagIndex{
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setImage:[UIImage imageNamed:nolImgName] forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:hgtImgName] forState:UIControlStateHighlighted];
+//    为按钮添加点击事件
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    btn.tag = tagIndex;
     [self addSubview:btn];
 
 }
 
+- (void)btnClick:(UIButton *)btn
+{
+//    获取标示符
+    NSInteger index = btn.tag;
+//    通知代理
+    if([self.delegate respondsToSelector:@selector(toolBar:btnType:)])
+    {
+        [self.delegate toolBar:self btnType:(int)index];
+    }
+    
+}
 
 //布局子控件
 - (void)layoutSubviews
@@ -74,6 +88,8 @@
         
     }
 }
+
+
 
 
 @end
